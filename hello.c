@@ -2,6 +2,7 @@
 //lamboot -v
 //mpicc hello.c -o hello
 //mpirun -np 5 ./hello
+//lamhalt
 
 #include <stdio.h>
 #include <mpi.h>
