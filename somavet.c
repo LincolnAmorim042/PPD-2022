@@ -19,7 +19,7 @@ int main(int argc, char** argv){
     if(rank==0){
         elempp = tamanho/size;
         if(size>1){
-            for(i=1;i<size;i++){
+            for(i=1;i<size-1;i++){
                 ind = i*elempp;
                 MPI_Send(&elempp, 1, MPI_INT, i, 0, MPI_COMM_WORLD);
                 MPI_Send(&vet[ind], elempp, MPI_INT, i, 0, MPI_COMM_WORLD);
