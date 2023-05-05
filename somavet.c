@@ -33,7 +33,7 @@ int main(int argc, char** argv){
         for(i=0;i<elempp;i++){
             soma+=vet[i];
         }
-        for(i=0;i<elempp;i++){
+        for(i=0;i<size-1;i++){
             MPI_Recv(&temp, 1, MPI_INT, MPI_ANY_SOURCE, 0, MPI_COMM_WORLD, &status);
             origem=status.MPI_SOURCE;
             soma+=temp;
