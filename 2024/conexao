@@ -1,0 +1,15 @@
+liga as maquinas
+ssh rgm41443@nomedamaquina (nome em cima do gabinete)
+coloca senha
+cd /home/local/rgm41443 (em ambas)
+pinga pra saber o ip (nome em cima do gabinete)
+gedit txt com os ip (hosts)
+manda os arquivos com scp nomedoarquivo rgm41443@maquinaquevaireceber:/home/local/rgm41443
+senha
+mpicc codigo.c -o codigo
+mandar so o codigo ja compilado
+lamboot -v hosts
+bota as senhas
+mpirun -np numerodemaquinas ./codigo
+
+ctrl+l abre o colocador de endereço na interface
